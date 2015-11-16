@@ -48,3 +48,13 @@ Books by category: If a user clicks a category on the left-hand side, a list of 
 Book details: The book details page is where users will go when they select a book. This page will display some basic information about the book and the all-important “Add to Cart” feature.
 
 Cart details: Once an item is added to the cart, the cart details page will display all items currently in the user’s cart. This page will allow the user to edit the quantity or remove the item from the cart.
+
+=============================================================================
+
+Models:
+-------
+Author
+Book
+Category
+Cart
+CartItem

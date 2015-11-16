@@ -35,3 +35,4 @@ c:\users\iigbo.cmcadd1\documents\visual studio 2013\Projects\ShoppingCart\Shoppi
 c:\users\iigbo.cmcadd1\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Optimization.xml
 c:\users\iigbo.cmcadd1\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
 c:\users\iigbo.cmcadd1\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
+c:\users\iigbo.cmcadd1\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
