@@ -51,10 +51,10 @@ Cart details: Once an item is added to the cart, the cart details page will disp
 
 =============================================================================
 
-Models:
--------
-Author
-Book
-Category
-Cart
-CartItem
+Models:			ViewModels:
+-------			-----------
+Author			AuthorViewModel
+Book			BookViewModel
+Category		CategoryViewModel
+Cart			CartViewModel
+CartItem		CartItemViewModel
