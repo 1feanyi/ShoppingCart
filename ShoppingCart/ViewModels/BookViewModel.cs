@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-
 namespace ShoppingCart.ViewModels
 {
     public class BookViewModel
@@ -32,16 +31,16 @@ namespace ShoppingCart.ViewModels
         public bool Featured { get; set; }
 
         [JsonProperty(PropertyName = "savePercentage")]
-        public int SavePercentage 
-        { 
-            get 
-            { 
-                return (int)(100 - (SalePrice/ListPrice * 100));
-            } 
+        public int SavePercentage
+        {
+            get
+            {
+                return (int)(100 - (SalePrice / ListPrice * 100));
+            }
         }
 
         [JsonProperty(PropertyName = "author")]
-        public virtual AuthorViewModel Author  { get; set; }
+        public virtual AuthorViewModel Author { get; set; }
 
         [JsonProperty(PropertyName = "category")]
         public virtual CategoryViewModel Category { get; set; }

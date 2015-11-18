@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,7 +16,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Iffy's Shopping Cart", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Ifeanyi's Shopping Cart", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -32,9 +32,6 @@
     </div>
     <div class="container body-content">
         <div class="well well-lg col-lg-3">
-            @* A new dynamic object is created with a property called selectedCategoryId. 
-                This property is set by checking if there is a ViewBag variable named SelectedCategoryId.
-                The CategoriesController will use this variable to be able to highlight the category the user has selected. *@
             @Html.Action("Menu", "Categories", new { selectedCategoryId = ViewBag.SelectedCategoryId != null ? ViewBag.SelectedCategoryId : 0 })
         </div>
         <div class="col-lg-9">
@@ -46,7 +43,8 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/shoppingCart")
+    @Scripts.Render(
+        "~/bundles/shoppingCart")
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -4,7 +4,7 @@ namespace ShoppingCart.ViewModels
 {
     public class CategoryViewModel
     {
-        [JsonProperty(PropertyName="id")]
+        [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
 
         [JsonProperty(PropertyName = "name")]

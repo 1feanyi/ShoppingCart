@@ -22,15 +22,24 @@ namespace ShoppingCart.Controllers
             AutoMapper.Mapper.CreateMap<Category, CategoryViewModel>();
         }
 
-        // This ChildActionOnly attribute, in combination with the layout loading this method via 
-        // the HtmlHelper and the Action method, lets me use the MVC framework 
-        // without the overhead of a full request.
+        // GET: Carts
+        public ActionResult Index()
+        {
+            var cart = _cartService.GetBySessionId(HttpContext.Session.SessionID);
+
+            return View(
+                AutoMapper.Mapper.Map<Cart, CartViewModel>(cart)
+            );
+        }
+
         [ChildActionOnly]
         public PartialViewResult Summary()
         {
             var cart = _cartService.GetBySessionId(HttpContext.Session.SessionID);
 
-            return PartialView(AutoMapper.Mapper.Map<Cart, CartViewModel>(cart));
+            return PartialView(
+                AutoMapper.Mapper.Map<Cart, CartViewModel>(cart)
+            );
         }
 
         protected override void Dispose(bool disposing)

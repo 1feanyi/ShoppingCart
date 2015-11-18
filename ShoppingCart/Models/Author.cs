@@ -11,8 +11,12 @@ namespace ShoppingCart.Models
         public string Biography { get; set; }
 
         [NotMapped]
-        public string FullName { 
-            get { return FirstName + ' ' + LastName;}
+        public string FullName
+        {
+            get
+            {
+                return FirstName + ' ' + LastName;
+            }
         }
 
         public virtual ICollection<Book> Books { get; set; }

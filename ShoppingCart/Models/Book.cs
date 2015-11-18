@@ -1,5 +1,4 @@
-﻿
-namespace ShoppingCart.Models
+﻿namespace ShoppingCart.Models
 {
     public class Book
     {
